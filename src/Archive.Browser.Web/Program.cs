@@ -1,14 +1,14 @@
-using Microsoft.FluentUI.AspNetCore.Components;
 using Archive.Browser.Web.Components;
 using Archive.Browser.Shared.Services;
 using Archive.Browser.Web.Services;
+using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
-builder.Services.AddFluentUIComponents();
+builder.Services.AddMudServices();
 
 // Add device-specific services used by the Archive.Browser.Shared project
 builder.Services.AddSingleton<IFormFactor, FormFactor>();
