@@ -16,4 +16,8 @@
     <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Icons" Version="4.11.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Protobuf Include="$(ProjectsDir)FileSystemService/src/V1/*.proto" GrpcServices="Client" AdditionalImportDirs="$(ProjectsDir)FileSystemService/src"/>
+  </ItemGroup>
+
 </Project>

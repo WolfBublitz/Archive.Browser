@@ -1,0 +1,3 @@
+[submodule "src/Archive.FileSystemServer"]
+	path = src/Archive.FileSystemServer
+	url = https://github.com/WolfBublitz/Archive.FileSystemServer

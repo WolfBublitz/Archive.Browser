@@ -68,7 +68,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components" Version="[4.11.0,)" />
-    <ProjectReference Include="../Archive.Browser.Shared/Archive.Browser.Shared.csproj" />
+    <ProjectReference Include="..\Archive.Browser.Shared\Archive.Browser.Shared.csproj" />
   </ItemGroup>
 
 </Project>
