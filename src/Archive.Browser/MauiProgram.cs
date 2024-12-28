@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Logging;
-using Microsoft.FluentUI.AspNetCore.Components;
 using Archive.Browser.Shared.Services;
 using Archive.Browser.Services;
+using MudBlazor.Services;
 
 namespace Archive.Browser;
 
@@ -21,9 +21,10 @@ public static class MauiProgram
         builder.Services.AddSingleton<IFormFactor, FormFactor>();
 
         builder.Services.AddMauiBlazorWebView();
-        builder.Services.AddFluentUIComponents();
+        builder.Services.AddMudServices();
 
-        #if DEBUG
+
+#if DEBUG
         builder.Services.AddBlazorWebViewDeveloperTools();
         builder.Logging.AddDebug();
 #endif
